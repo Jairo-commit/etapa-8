@@ -119,7 +119,16 @@
             ],
             "scripts": []
           }
+        },
+        "prerender": {
+          "builder": "@angular-devkit/build-angular:prerender",
+          "options": {
+          "browserTarget": "store:build:production",
+          "serverTarget": "store:server:production",
+          "routesFile": "static.routes.txt"
+          }
         }
+        
       }
     }
   },
