@@ -7,18 +7,48 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Node modules
+node_modules/
 
-# Editor directories and files
+# Build outputs
+dist/
+dist-ssr/
+out-tsc/
+
+# Angular specific
+.angular/
+.angular/cache/
+
+# Environment files (si usas diferentes para producción/dev)
+# ❗ Solo si no quieres subirlos por seguridad. Si los compartes con el equipo, déjalos.
+# environment.*.ts
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Optional npm cache
+.npm/
+
+# Compiled TypeScript
+*.tsbuildinfo
+
+# Coverage reports
+coverage/
+
+# Firebase deploy artifacts
+.firebase/
+
+# Misc
+*.local
+
