@@ -1,6 +1,8 @@
 [build]
-  publish = "dist/my-store-router"
-  command = "ng build"
+  base    = "Angular-router"  # Asegúrate de estar dentro de la carpeta Angular-router
+  command = "npx ng build --configuration production"  # Usamos npx para ejecutar ng localmente
+  publish = "Angular-router/dist/my-store-router"  # La carpeta de salida de Angular
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
